@@ -7,8 +7,12 @@ package wyswietlacz;
 
 /**
  *
- * @author Tomcio
+ * @author TomaszFigurski
  */
-public enum RozmiarWyswietlacza {
-    SIZE34, SIZE68, SIZE102, SIZE136, SIZE170, SIZE204;
+public class WyswietlaczBeanInfo extends java.beans.SimpleBeanInfo {
+     public java.awt.Image getIcon(int iconKind) {
+        return loadImage("/wyswietlacz/7segment2.png");
+    }
+     
+     
 }
